@@ -6,7 +6,8 @@ local function checkHWID()
     local response = http_request({
         Url = "https://raw.githubusercontent.com/LeeluWind/123321/refs/heads/main/data.json",
         Method = "GET"
-    }).Body
+    })
+	
 	print(URL)
 
     if not response or response == "" then
