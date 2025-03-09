@@ -6,9 +6,7 @@ local function checkHWID()
     local response = http_request({
         Url = "https://raw.githubusercontent.com/LeeluWind/123321/refs/heads/main/data.json",
         Method = "GET"
-    })
-	
-	print(URL)
+    }).Body
 
     if not response or response == "" then
         print("Список HWID пустой!")
